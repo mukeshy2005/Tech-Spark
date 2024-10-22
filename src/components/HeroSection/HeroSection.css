@@ -1,0 +1,132 @@
+.creative-hero--section {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.bg-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-img {
+  width: 95%; 
+  height: 95%; 
+  object-fit: cover;
+  border-radius: 15px;
+  filter: brightness(0.7) grayscale(50%);
+  margin: 0 2.5%; 
+}
+
+.auto-container {
+  position: relative;
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start; /* Aligns content to the left */
+  align-items: center;
+}
+
+.content-box {
+  max-width: 540px;
+  color: #fff;
+  animation: fadeInUp 1s ease-in-out;
+  text-align: left; /* Ensures the text aligns to the left */
+  padding-left: 15px; /* Adds space between the content and the left side */
+}
+
+.hero-title {
+  font-size: 4vw; 
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 28px;
+  text-transform: capitalize;
+}
+
+.hero-desc {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.8rem;
+  color: #fff;
+}
+
+.btn-box .hero-cta {
+  padding: 15px 30px; 
+  background: #134cb3;
+  border-radius: 7px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-box .hero-cta:hover {
+  background-color: #fff;
+  color: #134cb3;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 6vw;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .custom-img {
+    width: 100%;
+    height: auto;
+    margin: 0; /* Removed margins for smaller screens */
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 7vw;
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+  }
+
+  .custom-img {
+    width: 100%;
+    height: auto;
+    margin: 0; /* Removed margins for mobile view */
+    border-radius: 8px;
+  }
+
+  .btn-box .hero-cta {
+    padding: 12px 20px;
+  }
+}
+
+.hero-section {
+  position: relative; /* Position relative for absolute children */
+  padding: 60px 0; /* Adjust padding as needed */
+  text-align: center; /* Center the content */
+  color: #fff; /* Text color */
+}
+

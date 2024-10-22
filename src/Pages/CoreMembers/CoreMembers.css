@@ -1,0 +1,76 @@
+
+/* Global Styles */
+
+  /* Section Title */
+  .section-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  /* Team Container */
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Team Card */
+  .team-card {
+    
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .team-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Member Name and Role */
+  .member-name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .member-role {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #8b949e;
+  }
+  
+  /* Social Links */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s;
+  }
+  
+  .social-icon:hover {
+    opacity: 0.8;
+  }
+  
+  .github-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #58a6ff;
+    font-size: 14px;
+  }
+  
+  .github-link i {
+    font-size: 18px;
+  }
+  
+  
