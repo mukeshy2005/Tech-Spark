@@ -1,6 +1,6 @@
  # React + Vite Template
 
-This template provides a minimal setup to get React working with Vite, including HMR (Hot Module Replacement) and some ESLint rules. 
+This template provides a minimal setup to get React working with Vite, including HMR (Hot Module Replacement) and some ESLint rule. 
 
 ## Plugins
 
